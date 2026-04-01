@@ -8,7 +8,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-  
+
   const { login } = useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -94,8 +94,9 @@ const Login = () => {
                 </>
               )}
             </button>
+            <p className="text-center text-sm pt-4 border-t border-gray-100">Admin Access: Email: admin@finance.com <br />Password: adminpassword123</p>
           </div>
-          
+
           <div className="text-center text-sm pt-4 border-t border-gray-100">
             <span className="text-gray-500">Don't have an account? </span>
             <Link to="/register" className="font-semibold text-blue-600 hover:text-blue-500 transition-colors">
